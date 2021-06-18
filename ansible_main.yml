@@ -1,0 +1,7 @@
+---
+- hosts: springboot-production
+  environment: "{{ inventory__group_environment }}"
+  vars:
+    springboot_install_dir: /srv
+  roles:
+    - role: springboot
